@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FixedList<T> {
-    List<T> items = new ArrayList<>();
+    List<T> items;
     int maxSize;
 
     public FixedList(int maxSize) {
         this.maxSize = maxSize;
+        this.items = new ArrayList<>();
     }
 
     public void add(T item) {
